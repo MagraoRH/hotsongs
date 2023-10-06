@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../../assets/img/icone-hotsong-aba.png" type="image/x-icon">
+    <title>Hotsongs</title>
+</head>
+
+<body>
+    <!--inicio do menu da pagina-->
+    <header>
+        <nav class="nav-barra">
+            <div class="logo">
+                <img src="../../assets/img/logo-hotsongs.png" alt="Logo-do-site">
+            </div>
+            <div class="nav-lista">
+                <ul>
+                    <li class="nav-item"><a href="../../assets/index.html" class="nav-link">Inicio</a></li>
+                </ul>
+            </div>
+            <div class="login-botao">
+                <button>
+                    <a href="index.html">
+                        <h4>Fale Conosco</h4>
+                    </a>
+                </button>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuAnimacao()">
+                    <img class="icon" src="../../assets/img/menu_white_36dp.svg" alt="Icone-do-menu">
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../../assets/index.html" class="nav-link">Inicio</a></li>
+            </ul>
+            <div class="aparencia-botao-media">
+                <button class="login-botao">
+                    <a href="index.html">
+                        <h3>Fale Conosco</h3>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <script src="java.js"></script>
+    <!--fim do menu da pagina-->
+    <!--inicio formulario-->
+    <div id="alinhamento-do-faleconosco">
+        <div class="contain">
+            <div class="wrapper">
+                <div class="contacts">
+                    <img src="../../assets/img/cara-dancando.jpg" alt="cara-dancando-jpg">
+                </div>
+                <div class="form">
+                    <h3>Fale Conosco</h3>
+                    <form action="processa.php" id="responsividade-form" method="post">
+                        <p>
+                            <label for="">Nome Completo</label>
+                            <input type="text" name="nome">
+                        </p>
+                        <p>
+                            <label for="">Cpf</label>
+                            <input type="text" name="cpf">
+                        </p>
+                        <p>
+                            <label for="">Cidade</label>
+                            <input type="text" name="cidade">
+                        </p>
+                        <p>
+                            <label for="">Estado</label>
+                            <input type="text" name="estado">
+                        </p>
+                        <p class="full-width">
+                            <label for="">Sua mensagem</label>
+                            <textarea name="mensagem" id="" cols="30" rows="7"></textarea>
+                        </p>
+                        <p class="full-width">
+                            <button>Enviar</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fim formulario-->
+    <!--inicio do footer-->
+    <footer>
+        <br>
+        <div class="redes-sociais">
+
+            <a href="https://www.youtube.com/watch?v=81PJrDbFQ18"><img src="../../assets/img/youtube.png"
+                    alt="youtube-icon" width="50px" height="auto"></a>
+
+            <a href="https://web.whatsapp.com/"><img src="../../assets/img/whatsapp.png" alt="whatsapp-icon"
+                    width="50px" height="auto"></a>
+
+            <a href="https://twitter.com/NetflixBrasil"><img src="../../assets/img/twitter.png" alt="twitter-icon"
+                    width="50px" height="auto"></a>
+
+            <a href="https://www.instagram.com/magrao_rh/"><img src="../../assets/img/instagram.png"
+                    alt="instagram-icon" width="50px" height="auto"></a>
+        </div>
+        <div class="fale-conosco">
+            <a href="">Fale conosco</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <div class="rodape-direitos">
+            <p>© Todos direitos reservados</p>
+        </div>
+    </footer>
+    <!--fim do footer-->
+</body>
+
+</html>

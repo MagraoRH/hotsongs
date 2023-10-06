@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+/*inicio do menu da pagina*/
+header {
+    background-color: #323232;
+    box-shadow: 0px 3px 10px rgb(144, 143, 143);
+}
+
+.nav-barra {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    box-shadow: 10px 5px 5px #635959;
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    margin-bottom: -2%;
+    margin-top: -1%;
+    margin-left: 3%;
+}
+
+.nav-lista {
+    margin-top: 2%;
+}
+
+.nav-lista ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-lista a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5%;
+    padding: 15%;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 400;
+}
+
+.login-botao button {
+    border: none;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login-botao button:hover {
+    transform: scale(1.1);
+}
+
+.login-botao button:active {
+    transform: scale(1);
+}
+
+.login-botao {
+    margin-top: 1.5%;
+}
+
+.login-botao button a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1030px) {
+    .nav-barra {
+        padding: 0.8rem 2rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-botao {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu li {
+        padding: 1%;
+        padding-bottom: 2%;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-botao {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-botao {
+        width: 100%;
+    }
+
+    .mobile-menu li:active {
+        background-color: rgb(112, 110, 110);
+        width: 93%;
+        margin-left: -1%;
+        padding: 4%;
+    }
+
+    .aparencia-botao-media a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+/*fim do menu da pagina*/
+/*inicio do carrosel*/
+.slider {
+    margin: 0 auto;
+    width: 1000px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 1%;
+    border-radius: 5%;
+    box-shadow: 10px 8px 9px #635959;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    width: 1000px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 1000px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+#radio4:checked~.first {
+    margin-left: -75%;
+}
+
+.navigation-auto div {
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 1000px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: white;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: white;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: white;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background-color: white;
+}
+
+@media screen and (max-width: 1030px) {
+    .slider {
+        display: none;
+    }
+
+    .manual-navigation {
+        display: none;
+    }
+
+    .navigation-auto {
+        display: none;
+    }
+}
+
+/*fim do carrosel*/
+/*inicio dos generos*/
+.gen-geral {
+    text-align: center;
+}
+
+.gen-sub-titulo {
+    margin-left: -35%;
+    margin-top: 3%;
+}
+
+.gen-titulo {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.gen-display {
+    display: flex;
+    justify-content: center;
+}
+
+.gen-bloco {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.gen-bloco img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.dimensao-img-gen {
+    width: 65%;
+    height: auto;
+    box-shadow: 10px 5px 5px #635959;
+}
+
+@media screen and (max-width: 1030px) {
+    .gen-titulo {
+        margin-top: 30px;
+    }
+
+    .gen-display {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gen-bloco {
+        margin-top: 80px;
+    }
+
+    .dimensao-img-gen {
+        width: 150px;
+        height: auto;
+    }
+}
+
+
+/*fim dos generos*/
+/*inicio dos artistas*/
+.art-titulo {
+    margin: 3%;
+}
+
+.art-display {
+    display: flex;
+    justify-content: center;
+}
+
+.art-geral {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-right: -15%;
+    margin-left: -5%;
+}
+
+.art-geral h1 {
+    text-align: center;
+    margin-top: 9%;
+    margin-bottom: 5%;
+}
+
+.art {
+    display: inline-block;
+    padding: 10px 66px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: -35%;
+}
+
+.art:hover {
+    background-color: #6262624c;
+}
+
+.img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1030px) {
+    .art-titulo {
+        margin-top: 80px;
+    }
+
+    .art-display {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .art {
+        margin-left: 150px;
+        margin-top: 30px;
+    }
+}
+
+/*fim dos artistas*/
+/*inicio da historia da musica*/
+.hist-geral {
+    text-align: center;
+}
+
+.hist-geral h4 {
+    margin: 5%;
+    margin-right: 30%;
+}
+
+.guitarra-media-responsive {
+    width: 280px;
+}
+@media screen and (max-width: 1030px) {
+    .hist-geral h4{
+        margin-top: 100px;
+    }
+}
+
+
+/*fim da historia da musica*/
+/*inicio do footer*/
+footer {
+    margin-top: 3%;
+    background-color: #323232;
+    text-align: center;
+    color: white;
+    height: 340px;
+}
+
+.redes-sociais {
+    display: flex;
+    text-align: left;
+}
+
+.redes-sociais a {
+    margin-left: 8px;
+}
+
+.fale-conosco {
+    text-align: right;
+    margin-right: 30px;
+}
+
+.fale-conosco a {
+    color: white;
+    text-decoration: none;
+}
+
+.fale-conosco a:hover {
+    color: wheat;
+}
+
+.rodape-direitos p {
+    margin-bottom: 30px;
+}
+
+/*fim do footer*/

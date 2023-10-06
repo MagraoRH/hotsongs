@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+/*inicio do menu da pagina*/
+header {
+    background-color: #323232;
+    box-shadow: 0px 3px 10px rgb(144, 143, 143);
+}
+
+.nav-barra {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    box-shadow: 10px 5px 5px #635959;
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    margin-bottom: -2%;
+    margin-top: -1%;
+    margin-left: 3%;
+}
+
+.nav-lista {
+    margin-top: 2%;
+}
+
+.nav-lista ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-lista a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5%;
+    padding: 15%;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 400;
+}
+
+.login-botao button {
+    border: none;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login-botao button:hover {
+    transform: scale(1.1);
+}
+
+.login-botao button:active {
+    transform: scale(1);
+}
+
+.login-botao {
+    margin-top: 1.5%;
+}
+
+.login-botao button a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1030px) {
+    .nav-barra {
+        padding: 0.8rem 2rem;
+        box-shadow: none;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-botao {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu li {
+        padding: 1%;
+        padding-bottom: 2%;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-botao {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-botao {
+        width: 100%;
+    }
+
+    .mobile-menu li:active {
+        background-color: rgb(112, 110, 110);
+        width: 93%;
+        margin-left: -1%;
+        padding: 4%;
+    }
+
+    .aparencia-botao-media a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+    
+}
+
+/*fim do menu da pagina*/
+/*inicio do fale conosco*/
+@media screen and (max-width: 1030px) {
+    .contacts{
+        display: none;
+    }
+    #responsividade-form {
+        margin-top: 5%;
+        margin-right: 2%;
+    }
+
+}
+#alinhamento-do-faleconosco {
+    margin-top: 100px;
+    margin-bottom: 110px;
+}
+
+.contain {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+@media (min-width: 600px) {
+    .contain {
+        padding: 0;
+    }
+}
+
+h3,
+ul {
+    margin: 0;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid wheat;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.wrapper {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.wrapper>* {
+    padding: 1em;
+}
+
+@media (min-width: 700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .wrapper>* {
+        padding: 2em 2em;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacts {
+    background: #323232;
+    color: #fff;
+    box-shadow: 15px 14px 9px rgb(144, 143, 143);
+}
+
+.form {
+    background: #fff;
+    box-shadow: 10px 14px 11px rgb(144, 143, 143);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 20%;
+}
+
+form label {
+    display: block;
+}
+
+form p {
+    margin: 0;
+}
+
+.full-width {
+    grid-column: 1 / 3;
+}
+
+button,
+input,
+textarea {
+    padding: 0.5em;
+}
+
+button {
+    background: lightgrey;
+    width: 100%;
+    border: 0;
+}
+
+button:hover,
+button:focus {
+    background: wheat;
+    outline: 0;
+}
+/*fim do fale conosco*/
+/*inicio do footer*/
+footer {
+    margin-top: 3%;
+    background-color: #323232;
+    text-align: center;
+    color: white;
+    height: 340px;
+}
+
+.redes-sociais {
+    display: flex;
+    text-align: left;
+}
+
+.redes-sociais a {
+    margin-left: 8px;
+}
+
+.fale-conosco {
+    text-align: right;
+    margin-right: 30px;
+}
+
+.fale-conosco a {
+    color: white;
+    text-decoration: none;
+}
+
+.fale-conosco a:hover {
+    color: wheat;
+}
+
+.rodape-direitos p {
+    margin-bottom: 30px;
+}
+
+/*fim do footer*/

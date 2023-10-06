@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="shortcut icon" href="img/icone-hotsong-aba.png" type="image/x-icon">
+    <title>Hotsongs</title>
+</head>
+
+<body>
+    <!--inicio do menu da pagina-->
+    <header>
+        <nav class="nav-barra">
+            <div class="logo">
+                <img src="img/logo-hotsongs.png" alt="Logo-do-site">
+            </div>
+            <div class="nav-lista">
+                <ul>
+                    <li class="nav-item"><a href="../assets/index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#generos" class="nav-link">Generos</a></li>
+                    <li class="nav-item"><a href="#artistas" class="nav-link">Artistas</a></li>
+                    <li class="nav-item"><a href="#outros" class="nav-link">Outros</a></li>
+                </ul>
+            </div>
+            <div class="login-botao">
+                <button>
+                    <a href="../pag/fale-conosco/index.html">
+                        <h4>Fale Conosco</h4>
+                    </a>
+                </button>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuAnimacao()">
+                    <img class="icon" src="img/menu_white_36dp.svg" alt="Icone-do-menu">
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../assets/index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#generos" class="nav-link">Generos</a></li>
+                <li class="nav-item"><a href="#artistas" class="nav-link">Artistas</a></li>
+                <li class="nav-item"><a href="#outros" class="nav-link">Outros</a></li>
+            </ul>
+            <div class="aparencia-botao-media">
+                <button class="login-botao">
+                    <a href="../pag/fale-conosco/index.html">
+                        <h3>Fale Conosco</h3>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+    <!--fim do menu da pagina-->
+    <!--inicio do carrosel da pagina-->
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+                <img src="img/guitarra-propaganda.jpg" alt="guitarra-jpg">
+            </div>
+            <div class="slide">
+                <img src="img/preto-branco-violao-propaganda.png" alt="violao-preto-branco-jpg">
+            </div>
+            <div class="slide">
+                <img src="img/violao-propaganda.jpg" alt="violao-jpg">
+            </div>
+            <div class="slide">
+                <img src="img/violino-piano-propaganda.jpg" alt="piano-jpg">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+
+    <script src="../assets/script.js">nextImage()</script>
+    <!--fim do carrosel da pagina-->
+    <!--inicio do generos-->
+    <div class="gen-geral" id="generos">
+        <div class="gen-titulo">
+            <h1>Generos Musicais</h1>
+        </div>
+        <div class="gen-sub-titulo">
+            <h4>Sertanejo</h4>
+        </div>
+        <div class="gen-display">
+            <div class="gen-bloco">
+                <a href="../pag/domingo-manha/index.html"><img src="img/domingo-de-manha-marcos-jpg.jpg"
+                        alt="domingo-de-manha-jpg" class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Domingo de Manha</h3>
+                <br>
+                <p>Marcos Belutti</p>
+            </div>
+            <div class="gen-bloco">
+                <a href="#"><img src="img/maus-bocados-musica-jpg.jpg" alt="maus-bocados-jpg"
+                        class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Maus Bocados</h3>
+                <br>
+                <p>Cristiano Araujo</p>
+            </div>
+            <div class="gen-bloco">
+                <a href="#"><img src="img/fui-fiel-jpg.jpg" alt="fui-fiel-jpg" class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Fui Fiel</h3>
+                <br>
+                <p>Gustava Lima</p>
+            </div>
+            <div class="gen-bloco">
+                <a href="#"><img src="img/ate-voce-voltar-jpg.jpg" alt="ate-voce-voltar-jpg"
+                        class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Ate Voce Voltar</h3>
+                <br>
+                <p>Henrique e Juliano</p>
+            </div>
+        </div>
+        <div class="gen-sub-titulo">
+            <h4>Pagode</h4>
+        </div>
+        <div class="gen-display">
+            <div class="gen-bloco">
+                <a href=""><img src="../assets/img/menos-e-mais.jpg" alt="o-mundo-da-voltas-jpg"
+                        class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>O Mundo da Voltas</h3>
+                <br>
+                <p>Menos e Mais</p>
+            </div>
+            <div class="gen-bloco">
+                <a href=""><img src="../assets/img/alo-ex.jpg" alt="alo-ex-jpg" class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Alo Ex</h3>
+                <br>
+                <p>Turma do Pagode</p>
+            </div>
+            <div class="gen-bloco">
+                <a href=""><img src="../assets/img/vou-ver-te-aviso.jpg" alt="vou-ver-te-aviso-jpg"
+                        class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Vou Ver Te aviso</h3>
+                <br>
+                <p>Pixote</p>
+            </div>
+            <div class="gen-bloco">
+                <a href=""><img src="../assets/img/tchau-benca.jpg" alt="tchau-e-bencao-jpg"
+                        class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Tchau e Benção</h3>
+                <br>
+                <p>Exaltasamba</p>
+            </div>
+        </div>
+        <div class="gen-sub-titulo">
+            <h4>Trap</h4>
+        </div>
+        <div class="gen-display">
+            <div class="gen-bloco">
+                <a href=""><img src="../assets/img/kenny-g.jpg" alt="kenny-g-jpg" class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Kenny G</h3>
+                <br>
+                <p>Matue</p>
+            </div>
+            <div class="gen-bloco">
+                <a href=""><img src="../assets/img/paypal.jpg" alt="paypal-jpg" class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Paypal</h3>
+                <br>
+                <p>Teto</p>
+            </div>
+            <div class="gen-bloco">
+                <a href=""><img src="../assets/img/coracao-gelo.jpg" alt="coracao-gelo-jpg"
+                        class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Coração de Gelo</h3>
+                <br>
+                <p>WIU</p>
+            </div>
+            <div class="gen-bloco">
+                <a href=""><img src="../assets/img/flow-flaflu.jpg" alt="flow-flaflu-jpg"
+                        class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Flow Flaflu</h3>
+                <br>
+                <p>Kant MC</p>
+            </div>
+        </div>
+        <div class="gen-sub-titulo">
+            <h4>Funk</h4>
+        </div>
+        <div class="gen-display">
+            <div class="gen-bloco">
+                <a href=""><img src="../assets/img/dentro-da-hilux.jpeg"
+                        alt="dentro-da-hilux-jpg" class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Dentro da Hilux</h3>
+                <br>
+                <p>Ryan SP</p>
+            </div>
+            <div class="gen-bloco">
+                <a href=""><img src="../assets/img/balmain.jpg" alt="balmain-jpg"
+                        class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Balmain</h3>
+                <br>
+                <p>MC Daniel</p>
+            </div>
+            <div class="gen-bloco">
+                <a href=""><img src="../assets/img/ai-calica.png" alt="ai-calica-jpg" class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Ai Calica</h3>
+                <br>
+                <p>MC Poze do Rodo</p>
+            </div>
+            <div class="gen-bloco">
+                <a href=""><img src="../assets/img/ta-ok.jpg" alt="ta-ok-jpg"
+                        class="dimensao-img-gen"></a>
+                <br>
+                <br>
+                <h3>Ta OK</h3>
+                <br>
+                <p>Kevin o Chris</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--fim do generos-->
+    <!--inicio dos artistas-->
+    <div class="art-titulo" id="artistas">
+        <h1>Artistas</h1>
+    </div>
+    <div class="art-display">
+        <div class="art-geral">
+            <div>
+                <a href="#" class="art">
+                    <img src="img/ivete-jpg.png" alt="Ícone" class="img" width="80px" height="auto"> <strong>Ivete
+                        Sangalo</strong>
+                </a>
+                <br>
+                <a href="#" class="art">
+                    <img src="img/50cent-jpg.png" alt="Ícone" class="img" width="80px" height="auto"> <strong>‎ ‎ ‎ ‎
+                        ‎ ‎ ‎ ‎ ‎ 50 Cent</strong>
+                </a>
+                <br>
+                <a href="#" class="art">
+                    <img src="img/xama-jpg.png" alt="Ícone" class="img" width="80px" height="auto"> <strong>
+                        ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎
+                        ‎ ‎ ‎ ‎Xama</strong>
+                </a>
+                <br>
+                <a href="#" class="art">
+                    <img src="img/the-weekend-jpg.png" alt="Ícone" class="img" width="80px" height="auto"> <strong>The
+                        Wekend</strong>
+                </a>
+                <br>
+                <a href="#" class="art">
+                    <img src="img/bruno-mars-jpg.png" alt="Ícone" class="img" width="80px" height="auto"> <strong>Bruno
+                        Mars</strong>
+                </a>
+                <br>
+                <a href="#" class="art">
+                    <img src="img/rita-lee-jpg.png" alt="Ícone" class="img" width="80px" height="auto"> <strong>‎ ‎ ‎ ‎
+                        ‎ ‎
+                        Rita Lee</strong>
+                </a>
+            </div>
+        </div>
+        <div class="art-geral">
+            <div>
+                <a href="#" class="art">
+                    <img src="img/lil-pump-jpg.png" alt="Ícone" class="img" width="80px" height="auto"> <strong>‎ ‎ ‎ ‎
+                        ‎ ‎ ‎ ‎Lil Pump</strong>
+                </a>
+                <br>
+                <a href="#" class="art">
+                    <img src="img/two-pac-jpg.png" alt="Ícone" class="img" width="80px" height="auto"> <strong>‎ ‎ ‎ ‎
+                        ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ Tupac</strong>
+                </a>
+                <br>
+                <a href="#" class="art">
+                    <img src="img/kevinho-jpg.png" alt="Ícone" class="img" width="80px" height="auto"> <strong>
+                        ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ Kevinho</strong>
+                </a>
+                <br>
+                <a href="#" class="art">
+                    <img src="img/claudia-raia-jpg.png" alt="Ícone" class="img" width="80px" height="auto">
+                    <strong>Claudia Raia</strong>
+                </a>
+                <br>
+                <a href="#" class="art">
+                    <img src="img/poze-do-rodo-jpg.png" alt="Ícone" class="img" width="80px" height="auto"> <strong>Poze
+                        do Rodo</strong>
+                </a>
+                <br>
+                <a href="#" class="art">
+                    <img src="img/orochi-jpg.png" alt="Ícone" class="img" width="80px" height="auto"> <strong>‎ ‎ ‎ ‎
+                        ‎ ‎ ‎ ‎ ‎ ‎ ‎
+                        Orochi</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--fim dos artistas-->
+    <!--inicio da historia da musica-->
+    <div class="hist-geral" id="outros">
+        <h4>A Magia da Música: Uma Jornada de Emoções e Conexões</h4>
+        <div>
+            <p>A música é uma das formas mais poderosas e universais de expressão humana. Ela transcende barreiras <br>
+                culturais, linguísticas e temporais, tocando os corações e almas das pessoas ao redor do mundo. Através
+                <br>
+                dos séculos, a música tem desempenhado um papel fundamental na sociedade, desencadeando emoções <br>
+                profundas, inspirando movimentos culturais e construindo pontes entre diferentes pessoas e culturas.
+                <br>
+                <br>
+                Uma das características mais notáveis da música é sua capacidade única de evocar emoções. Quando ouvimos
+                <br>
+                uma canção, somos transportados para um mundo de sentimentos que podem variar desde a alegria e a <br>
+                euforia até a tristeza e a melancolia. Cada nota, cada acorde e cada letra são como pinceladas em uma
+                <br>
+                tela emocional, criando uma paleta de sentimentos que nos permite explorar nossa própria humanidade de
+                <br>
+                maneira profunda e íntima. A música é um espelho que reflete nossas próprias experiências e emoções,
+                <br>
+                muitas vezes oferecendo consolo e compreensão quando mais precisamos. <br>
+                <br>
+                Além de ser uma fonte de conexão emocional, a música também desempenha um papel vital na construção de
+                <br>
+                comunidades e na promoção da compreensão entre diferentes grupos de pessoas. Festivais de música, <br>
+                concertos e eventos culturais proporcionam oportunidades para que indivíduos de diversas origens se <br>
+                reúnam e compartilhem uma experiência comum. A música é uma linguagem universal que todos podem <br>
+                entender, independentemente de sua língua nativa ou origem cultural. Ela une as pessoas através do ritmo
+                <br>
+                e da melodia, permitindo que comuniquem sentimentos e pensamentos de maneira única. <br>
+                <br>
+                <img src="img/guitarraa-png.png" alt="icone" width="400px" height="auto"
+                    class="guitarra-media-responsive">
+                <br>
+            </p>
+        </div>
+    </div>
+    <!--fim da historia da musica-->
+    <!--inicio do footer-->
+    <footer>
+        <br>
+        <div class="redes-sociais">
+
+            <a href="https://www.youtube.com/watch?v=81PJrDbFQ18"><img src="../assets/img/youtube.png"
+                    alt="youtube-icon" width="50px" height="auto"></a>
+
+            <a href="https://web.whatsapp.com/"><img src="../assets/img/whatsapp.png" alt="whatsapp-icon" width="50px" height="auto"></a>
+
+            <a href="https://twitter.com/NetflixBrasil"><img src="../assets/img/twitter.png" alt="twitter-icon" width="50px" height="auto"></a>
+
+            <a href="https://www.instagram.com/magrao_rh/"><img src="../assets/img/instagram.png" alt="instagram-icon" width="50px" height="auto"></a>
+        </div>
+        <div class="fale-conosco">
+            <a href="../pag/fale-conosco/index.html">Fale conosco</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <div class="rodape-direitos">
+            <p>© Todos direitos reservados</p>
+        </div>
+    </footer>
+    <!--fim do footer-->
+</body>
+
+</html>
